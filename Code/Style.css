@@ -1,0 +1,124 @@
+*{
+    max-width: 100%;
+    width: auto;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+
+
+}
+body{
+background-color: var(--secondary);
+
+}
+
+a{
+text-decoration: none;
+
+}
+:root{
+    --Primary: #020611;
+    --secondary:#f1f2f4;
+    --text-color:#333;
+}
+@media screen and (min-width: 786px) {
+  
+    
+    .padding{
+        padding: 10px 40px 10px 40px;
+        }
+
+        .raw{
+            width: 100%;
+            max-width: 1200px;
+            box-sizing: border-box;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #fff;
+            
+            
+            }
+            input#scan {
+                width: 100%;
+                height: 70px;
+                border-radius: 30px;
+                background-color: #020611;
+                color: #fff;
+                font-size: 30px;
+                font-family: 'Cinzel';
+                text-align: center;
+                margin: 5px;
+            }
+            input#scan::placeholder {
+                color: #fff;
+                font-size: 30px;
+                text-align: center;
+                font-family: 'Cinzel';
+                line-height: 1;
+            }
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.scan{
+
+width: 100%;
+height:60px;
+background-color:var(--secondary);
+
+}
+.grid{
+
+display:grid;
+grid-template-columns: auto auto auto auto;
+
+}
+.inline{
+display:inline-block;
+
+}
+.search {
+    width: 75%;
+    margin-top: 0px;
+    margin-right: auto !important;
+    padding-left: 30px;
+   
+}
+.login {
+    width: 10%;
+    margin-top: 0px;
+    margin-right: auto !important;
+    padding-left: 30px;
+}
+.cart {
+    width: 10%;
+    margin-top: 0px;
+    margin-right: auto !important;
+    padding-left: 30px;
+}
+.head i{
+padding-right: 7px;
+
+}
+.scan{
+    border-radius: 8px;
+    border: none;
+    background-color: var(--secondary);
+
+}
+input.scan::placeholder {
+    color: #333;
+    font-size:20px;
+    text-align: left;
+    font-family: 'Cinzel';
+    line-height: 1;
+    position: relative;
+    left: 20px;
+   
+    
+
+}

@@ -30,9 +30,19 @@ text-decoration: none;
     --secondary:#f1f2f4;
     --text-color:#333333;
 }
+
 @media screen and (min-width: 786px) {
-  
+    div#catroot {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        gap: 10px;
+       
+    }
     
+    .catogery{
+margin-top:10px;
+
+    }
     .padding{
         padding: 10px 40px 10px 40px;
         }
@@ -131,3 +141,4 @@ input.scan::placeholder {
     
 
 }
+

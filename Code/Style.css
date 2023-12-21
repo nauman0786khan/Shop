@@ -11,6 +11,15 @@ body{
 background-color: var(--secondary);
 
 }
+p{
+font-weight: 600;
+
+}
+
+p ,h1 ,h2,h3{
+font-family:sans-serif;
+color: var(--text-color);
+}
 
 a{
 text-decoration: none;
@@ -19,7 +28,7 @@ text-decoration: none;
 :root{
     --Primary: #020611;
     --secondary:#f1f2f4;
-    --text-color:#333;
+    --text-color:#333333;
 }
 @media screen and (min-width: 786px) {
   
@@ -45,7 +54,7 @@ text-decoration: none;
                 background-color: #020611;
                 color: #fff;
                 font-size: 30px;
-                font-family: 'Cinzel';
+                font-family:sans-serif;
                 text-align: center;
                 margin: 5px;
             }
@@ -53,7 +62,7 @@ text-decoration: none;
                 color: #fff;
                 font-size: 30px;
                 text-align: center;
-                font-family: 'Cinzel';
+                font-family:sans-serif;
                 line-height: 1;
             }
 }

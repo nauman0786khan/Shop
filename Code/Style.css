@@ -7,6 +7,15 @@
 
 
 }
+.owl-carousel .owl-stage-outer{
+    display: inline-table;
+
+}
+
+h4{
+color: #020611 !important;
+
+}
 body{
 background-color: var(--secondary);
 

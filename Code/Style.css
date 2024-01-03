@@ -159,7 +159,7 @@ input.scan::placeholder {
 
 }
 
-.cat {
+.over {
     overflow: overlay;
     overflow-x: scroll;
 }

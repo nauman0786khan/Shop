@@ -1,12 +1,17 @@
 *{
-    max-width: 100%;
-    width: auto;
+   
+ 
     padding: 0;
     box-sizing: border-box;
     margin: 0;
 
 
 }
+body {
+    box-sizing: border-box;
+
+}
+
 .owl-carousel .owl-stage-outer{
     display: inline-table;
 
@@ -92,7 +97,7 @@ margin-top:10px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
+gap:20px;
 }
 .scan{
 
@@ -105,6 +110,7 @@ background-color:var(--secondary);
 
 display:grid;
 grid-template-columns: auto auto auto auto;
+gap:30px;
 
 }
 .inline{
@@ -153,3 +159,11 @@ input.scan::placeholder {
 
 }
 
+.cat {
+    overflow: overlay;
+    overflow-x: scroll;
+}
+.cat {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

@@ -9,33 +9,16 @@ console.log(data);
 let dd=""
 data.map((ff)=>{
 
-     dd+=`<div class="owl-carousel owl-theme owl-loaded">
-     <div class="owl-stage-outer">
-         <div class="owl-stage">
-             <div class="owl-item">...</div>
-             <div class="owl-item">...</div>
-             <div class="owl-item">...</div>
-         </div>
+     dd+=`<div class="item"><img src="${ff.image}" height="100px" width="100px"><p >${ff.name}</p></div>
+
+        
      </div>
-     <div class="owl-nav">
-         <div class="owl-prev">prev</div>
-         <div class="owl-next">next</div>
-     </div>
-     <div class="owl-dots">
-         <div class="owl-dot active"><span></span></div>
-         <div class="owl-dot"><span></span></div>
-         <div class="owl-dot"><span></span></div>
-     </div>
- </div>`;
+    
+    `;
 
 });
 
-
-
-
-
-
 document.getElementById("rootcat").innerHTML = dd;
-console.log(dd);
+
 
 });

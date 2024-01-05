@@ -23,8 +23,10 @@ document.getElementById("rootcat").innerHTML = dd;
 
 });
 
-let image=document.querySelector("img").value();
-image.addEventlistener("click" , function({
+document.addEventListener("click", function(gg){
+   console.log(gg.target.alt);
+   idsave= gg.target.alt;
+   localStorage.setItem("proid" , idsave);
 
-document.
-}))
+
+  });

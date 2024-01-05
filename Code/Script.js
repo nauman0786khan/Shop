@@ -22,3 +22,9 @@ document.getElementById("rootcat").innerHTML = dd;
 
 
 });
+
+let image=document.querySelector("img").value();
+image.addEventlistener("click" , function({
+
+document.
+}))

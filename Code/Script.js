@@ -25,8 +25,10 @@ document.getElementById("rootcat").innerHTML = dd;
 
 document.addEventListener("click", function(gg){
    console.log(gg.target.alt);
-   idsave= gg.target.alt;
+ var  idsave= gg.target.alt;
    localStorage.setItem("proid" , idsave);
-
+   
 
   });
+  
+ 

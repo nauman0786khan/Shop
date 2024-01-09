@@ -22,8 +22,9 @@ document.getElementById("rootcat").innerHTML = dd;
 
 
 });
+let gg = document.getElementsByTagName("img");
 
-document.addEventListener("click", function(gg){
+gg.addEventListener("click", function(gg){
    console.log(gg.target.alt);
  var  idsave= gg.target.alt;
    localStorage.setItem("proid" , idsave);

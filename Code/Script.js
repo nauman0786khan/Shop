@@ -28,8 +28,7 @@ console.log(gg);
    console.log(gg.target.alt);
  var  idsave= gg.target.alt;
 
- if(idsave < 0){
-
+ if(idsave <= 0){
 
   console.log('no id recived');
   }else if (idsave > 0){

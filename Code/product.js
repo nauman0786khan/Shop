@@ -1,6 +1,6 @@
 
-let x = localStorage.getItem("proid");
-console.log(x);
+
+
 
 let v = fetch("https://api.escuelajs.co/api/v1/products");
 v.then((vv)=>{
@@ -11,7 +11,7 @@ return vv.json();
 }).then((rr)=>{
 
 console.log(rr);
-
+// data fecth
 let clothes = rr.filter(rr =>rr.category.name =="Clothes1");
 let Electronics = rr.filter(rr =>rr.category.name =="Electronics");
 let Furniture = rr.filter(rr =>rr.category.name =="Furniture");
@@ -23,7 +23,7 @@ console.log(clothes);
 let clo=""
 clothes.map((cl)=>{
     // console.log(pp);
-    clo+=`<div class="item"><img src="${cl.images}" height="250px" alt="${cl.id}" width="250px"><p >${cl.title}</p></div>
+    clo+=`<div class="item"><img src="${cl.images}" height="250px" alt="${cl.category.id}" width="250px"><p >${cl.title}</p></div>
          </div>
         
         `;
@@ -86,3 +86,6 @@ console.log(value)
    document.getElementById("header").innerHTML=value;
 
 })
+
+
+

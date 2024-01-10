@@ -23,12 +23,24 @@ document.getElementById("rootcat").innerHTML = dd;
 
 });
 let gg = document.getElementsByTagName("img");
-
-gg.addEventListener("click", function(gg){
+console.log(gg);
+ document.addEventListener("click", function(gg){
    console.log(gg.target.alt);
  var  idsave= gg.target.alt;
+
+ if(idsave < 0){
+
+
+  console.log('no id recived');
+  }else if (idsave > 0){
+    window.open("https://miniature-space-barnacle-5jx5p6gjp55cp7qx-5501.app.github.dev/singleproductpage.html");
+  
+  }
+  
    localStorage.setItem("proid" , idsave);
+
    
+
 
   });
   

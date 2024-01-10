@@ -14,9 +14,10 @@ let SPP= ""
 
 Singleproduct.map((va)=>{
     
-console.log(x);
-SPP=` <div class="raw padding flex"><div class="wth"><img src="${va.images}" alt=""></div>
-<div class="wth"><h2 class="textgap">Headng</h2><h1 class="textgap">price</h1></div></div>`
+console.log(va);
+SPP=` <div class="raw padding flex"><div class="wth"><img src="${va.images}" width="100%" alt=""></div>
+<div class="wth"><h2 class="textgap">${va.title}</h2><h1 class="textgap">
+₹${va.price}</h1><p class="textgap">${va.description}</p><h3 class="textgap">${va.category.name}</h3></div></div>`
 })
 document.getElementById("SPPF").innerHTML = SPP;
 });

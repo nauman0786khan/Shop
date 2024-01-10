@@ -12,7 +12,7 @@ return vv.json();
 
 console.log(rr);
 // data fecth
-let clothes = rr.filter(rr =>rr.category.name =="Clothes1");
+let clothes = rr.filter(rr =>rr.category.name =="Clothesssss");
 let Electronics = rr.filter(rr =>rr.category.name =="Electronics");
 let Furniture = rr.filter(rr =>rr.category.name =="Furniture");
 let Shoes = rr.filter(rr =>rr.category.name =="Shoes");
@@ -23,7 +23,7 @@ console.log(clothes);
 let clo=""
 clothes.map((cl)=>{
     // console.log(pp);
-    clo+=`<div class="item"><img src="${cl.images}" height="250px" alt="${cl.category.id}" width="250px"><p >${cl.title}</p></div>
+    clo+=`<div class="item"><img src="${cl.images}" height="250px" alt="${cl.id}" width="250px"><p >${cl.title}</p></div>
          </div>
         
         `;
@@ -37,7 +37,7 @@ clothes.map((cl)=>{
 let Elc=""
 Electronics.map((EE)=>{
 // console.log(pp);
-     Elc+=`<div class="item"><img src="${EE.images}" height="250px" width="250px"><p >${EE.title}</p></div>
+     Elc+=`<div class="item"><img src="${EE.images}" alt="${EE.id}" height="250px" width="250px"><p >${EE.title}</p></div>
 
         
      </div>

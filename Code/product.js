@@ -2,7 +2,7 @@
 
 
 
-let v = fetch("https://api.escuelajs.co/api/v1/products");
+let v = fetch("Code/product.json");
 v.then((vv)=>{
 
 return vv.json();
@@ -12,7 +12,7 @@ return vv.json();
 
 console.log(rr);
 // data fecth
-let clothes = rr.filter(rr =>rr.category.name =="Clothesssss");
+let clothes = rr.filter(rr =>rr.category.name =="Clothes");
 let Electronics = rr.filter(rr =>rr.category.name =="Electronics");
 let Furniture = rr.filter(rr =>rr.category.name =="Furniture");
 let Shoes = rr.filter(rr =>rr.category.name =="Shoes");

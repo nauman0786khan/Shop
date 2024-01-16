@@ -2,7 +2,7 @@
 let x = localStorage.getItem("proid");
 console.log(x);
 
-let sp = fetch("https://api.escuelajs.co/api/v1/products");
+let sp = fetch("Code/product.json");
 sp.then((ss)=>{
 
 return ss.json();

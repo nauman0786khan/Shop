@@ -1,5 +1,5 @@
-let p = fetch("https://api.escuelajs.co/api/v1/categories");
-p.then((value)=>{
+let p = fetch("Code/catogery.json"); 
+ p.then( (value)=>{
 
 return value.json();
 
@@ -7,7 +7,7 @@ return value.json();
 
 console.log(data);
 let dd=""
-data.map((ff)=>{
+ data.map((ff)=>{
 
      dd+=`<div class="item"><img src="${ff.image}" height="100px" width="100px"><p >${ff.name}</p></div>
 
@@ -17,8 +17,8 @@ data.map((ff)=>{
     `;
 
 });
-
-document.getElementById("rootcat").innerHTML = dd;
+ 
+ document.getElementById("rootcat").innerHTML =dd;
 
 
 });

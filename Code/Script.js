@@ -32,7 +32,7 @@ console.log(gg);
 
   console.log('no id recived');
   }else if (idsave > 0){
-    window.open("https://miniature-space-barnacle-5jx5p6gjp55cp7qx-5501.app.github.dev/singleproductpage.html");
+    window.open("singleproductpage.html");
   
   }
   

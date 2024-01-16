@@ -1,4 +1,4 @@
-let p = fetch("Code/catogery.json"); 
+let p = fetch("Code/cat.json"); 
  p.then( (value)=>{
 
 return value.json();

@@ -18,9 +18,10 @@ dd.addEventListener("submit", function(dd) {
     let user = us.filter(us =>us.email ==username);
     let pass = us.filter(us =>us.password ==password);
     
-    if(username != user[0].email){
+ 
+    if(user == 0){
 
-console.log("no user herer")
+      document.getElementById("errortext").innerHTML="no user herer"
 
 
     }else{
@@ -30,10 +31,10 @@ console.log("no user herer")
             
                 if(username==finaldata.email && password==finaldata.password){
             
-                    console.log("login now")
+                    document.getElementById("errortext").innerHTML="Login now"
                     
                         }else{
-                    console.log("wrong user")
+                          document.getElementById("errortext").innerHTML="Password is Wrong"
                     
                         }
             

@@ -249,7 +249,18 @@ p{
 color: #fff !important;
 
 }
-ul.listoffer {
+ul.listoffer li::before {
+   content: "";
+    background-image: url(/images/c22c9fc4-0555-4460-8401-bf5c28d7ba29.webp);
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 5px;
+    left: -20px;
+    background-size: contain;
+}
+ul.listoffer li{
+position: relative;
     margin-left: 30px;
-    list-style-image: url(/images/c22c9fc4-0555-4460-8401-bf5c28d7ba29.webp);
+    list-style-type: none;
 }

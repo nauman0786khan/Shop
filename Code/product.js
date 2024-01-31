@@ -85,7 +85,17 @@ return header.text();
 console.log(value)
    document.getElementById("header").innerHTML=value;
 
-})
+});
+// porduct data fetch
+let pr =fetch("productadd.html")
+pr.then((addpro)=>{
 
+return addpro.text();
 
+}).then((cart)=>{
+
+console.log(cart)
+   document.getElementById("addcart").innerHTML=cart;
+
+});
 

@@ -23,7 +23,7 @@ console.log(clothes);
 let clo=""
 clothes.map((cl)=>{
     // console.log(pp);
-    clo+=`<div class="item"><img src="${cl.images}" height="250px" alt="${cl.id}" width="250px"><p >${cl.title}</p></div>
+    clo+=`<div class="item"><img src="${cl.images}" height="250px" alt="${cl.id}" width="250px"><p >${cl.title}</p><button  id="${cl.id}" onClick="getcartid(this.id)" class="btn">Buy Now</button></div></div>
          </div>
         
         `;

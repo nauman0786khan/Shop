@@ -31,18 +31,39 @@ SPP=` <div class="raw padding flex"><div class="wth"><img src="${va.images}" wid
 document.getElementById("SPPF").innerHTML = SPP;
 });
 
+let cartarr =[]
 function getcartid(carid){
-
+    localStorage.setItem("cartsave" , [cartarr]);
     console.log(carid);
+    
+
+
+        cartarr.push(carid);
+     
+        console.log(cartarr)
+    
+
+   
     let cartsp = fetch("Code/product.json");
     cartsp.then((ct)=>{
 return ct.json();
 
     }).then((ctf)=>{
 
+let cartfinal=[]
+cartarr.map((cv , el ,arr)=>{
+    cartfinal+= ctf.filter(ctf =>ctf.id ==cv);
 
-let cartfilter = ctf.filter(ctf =>ctf.id ==x);
-console.log(cartfilter)
+
+})
+    
+
+
+    console.log([cartfinal])
+
+
+
+
 let cats=""
 cartfilter.map((crt)=>{
 
@@ -53,7 +74,13 @@ cats=`<div class="raw flex Padding shadow pluscart">
 </div>`
 
 })
+
 document.getElementById("cartget").innerHTML = cats;
     })
 
 }
+
+let caarr = localStorage.getItem("cartsave");
+
+
+console.log([caarr])

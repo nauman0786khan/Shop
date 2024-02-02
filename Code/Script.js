@@ -1,3 +1,4 @@
+let x = localStorage.getItem("proid");
 let p = fetch("Code/cat.json"); 
  p.then( (value)=>{
 

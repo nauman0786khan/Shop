@@ -1,6 +1,6 @@
 // single product page data fetch
 let x = localStorage.getItem("proid");
-console.log(x);
+console.log(x); 
 
 
 
@@ -68,11 +68,14 @@ cartarr.forEach((item)=>{
     </div>`
 
    })
-
   
-       document.getElementById("cartget").innerHTML= cats;
+  
+   
+
 })
-       
+localStorage.setItem("carts" , cats);    
+let crt = localStorage.getItem("carts");
+document.getElementById("cartget").innerHTML= crt;
     })
 
 }
@@ -80,4 +83,6 @@ cartarr.forEach((item)=>{
 let caarr = localStorage.getItem("cartsave");
 
 
-console.log([caarr])
+
+
+   

@@ -32,7 +32,7 @@ document.getElementById("SPPF").innerHTML = SPP;
 });
 
 let cartarr =[]
-let cartfinal=""
+let cartfinal=''
 
 function getcartid(carid){
     localStorage.setItem("cartsave" , [cartarr]);
@@ -53,31 +53,26 @@ return ct.json();
     }).then((ctf)=>{
 
 
-
+        let cats=""
 cartarr.forEach((item)=>{
 
    cartfinal= ctf.filter(ctf =>ctf.id==item);
+  
+   console.log(cartfinal);
+   cartfinal.forEach((dd)=>{
 
+    cats+=`<div class="raw flex Padding shadow pluscart">
+    <div><img src="${dd.images}" alt="" width="40px" ></div>
+    <div><p>${dd.title}</p></div>
+    
+    </div>`
+
+   })
+
+  
+       document.getElementById("cartget").innerHTML= cats;
 })
-cartfinal.push(cartfinal)
-console.log(cartfinal);
- 
-
-
-
-
-let cats=""
-cartfinal.forEach((crt)=>{
-
-cats=`<div class="raw flex Padding shadow pluscart">
-<div><img src="${crt.images}" alt="" width="40px" ></div>
-<div><p>${crt.title}</p></div>
-
-</div>`
-
-})
-
-document.getElementById("cartget").innerHTML = cats;
+       
     })
 
 }

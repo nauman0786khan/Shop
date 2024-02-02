@@ -32,6 +32,8 @@ document.getElementById("SPPF").innerHTML = SPP;
 });
 
 let cartarr =[]
+let cartfinal=""
+
 function getcartid(carid){
     localStorage.setItem("cartsave" , [cartarr]);
     console.log(carid);
@@ -50,22 +52,22 @@ return ct.json();
 
     }).then((ctf)=>{
 
-let cartfinal=[]
-cartarr.map((cv , el ,arr)=>{
-    cartfinal+= ctf.filter(ctf =>ctf.id ==cv);
 
+
+cartarr.forEach((item)=>{
+
+   cartfinal= ctf.filter(ctf =>ctf.id==item);
 
 })
-    
-
-
-    console.log([cartfinal])
+cartfinal.push(cartfinal)
+console.log(cartfinal);
+ 
 
 
 
 
 let cats=""
-cartfilter.map((crt)=>{
+cartfinal.forEach((crt)=>{
 
 cats=`<div class="raw flex Padding shadow pluscart">
 <div><img src="${crt.images}" alt="" width="40px" ></div>

@@ -37,17 +37,20 @@ cartarr.forEach((item)=>{
     localStorage.setItem("carts" , cats);    
 
    })
-  
+   localStorage.setItem("cartn" , [cartarr]);
+   document.getElementById("numberpro").innerHTML= cartarr.length;
   
    let crt = localStorage.getItem("carts");
    document.getElementById("cartget").innerHTML= crt;
-   
+
 })
 
 
     })
-
+    
 }
+
+
 let dropcart= document.getElementById("dro")
 function drodown(){
     console.log(dropcart)
@@ -55,7 +58,8 @@ function drodown(){
 
  }
 
- 
- let cartn = localStorage.getItem("cartsave");
- console.log(cartn)
- document.getElementById("numberpro").innerHTML= cartn.length;
+
+ let cartn = localStorage.getItem("cartn");
+
+    console.log(cartn)
+    

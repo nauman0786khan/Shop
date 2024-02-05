@@ -35,17 +35,24 @@ cartarr.forEach((item)=>{
     
     </div>`
     localStorage.setItem("carts" , cats);    
- 
+    document.getElementById("dro").innerHTML= cartarr.length;
    })
   
   
    let crt = localStorage.getItem("carts");
    document.getElementById("cartget").innerHTML= crt;
-
+   
 })
 
 
     })
 
 }
+let dropcart= document.getElementById("dro")
+function drodown(){
+    console.log()
+    dropcart.classList.toggle("droactive").slidedown(300);
 
+ }
+
+ 

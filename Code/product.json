@@ -1,23 +1,5 @@
 [
-    {
-      "id": 1,
-      "title": "Nuevo nombre",
-      "price": 5000,
-      "description": "Nueva descripción",
-      "images": [
-        "[\"http://arrozdepollo.co\"",
-        "\"http://arrozdepollo.com\"]"
-      ],
-      "creationAt": "2024-01-16T00:07:03.000Z",
-      "updatedAt": "2024-01-16T02:59:18.000Z",
-      "category": {
-        "id": 1,
-        "name": "Clothes",
-        "image": "https://i.imgur.com/QkIa5tT.jpeg",
-        "creationAt": "2024-01-16T00:07:03.000Z",
-        "updatedAt": "2024-01-16T00:07:03.000Z"
-      }
-    },
+    
     {
       "id": 2,
       "title": "Classic Red Pullover Hoodie",
@@ -1015,60 +997,7 @@
         "updatedAt": "2024-01-16T00:07:03.000Z"
       }
     },
-    {
-      "id": 52,
-      "title": "cvfff",
-      "price": 10,
-      "description": "fffffff",
-      "images": [
-        "[\"https://api.escuelajs.co/api/v1/files/2b13.jpeg\"]"
-      ],
-      "creationAt": "2024-01-16T01:45:53.000Z",
-      "updatedAt": "2024-01-16T01:45:53.000Z",
-      "category": {
-        "id": 1,
-        "name": "Clothes",
-        "image": "https://i.imgur.com/QkIa5tT.jpeg",
-        "creationAt": "2024-01-16T00:07:03.000Z",
-        "updatedAt": "2024-01-16T00:07:03.000Z"
-      }
-    },
-    {
-      "id": 53,
-      "title": "new book",
-      "price": 10,
-      "description": "new book",
-      "images": [
-        "[\"https://api.escuelajs.co/api/v1/files/2b13.jpeg\"]"
-      ],
-      "creationAt": "2024-01-16T01:46:09.000Z",
-      "updatedAt": "2024-01-16T01:46:09.000Z",
-      "category": {
-        "id": 1,
-        "name": "Clothes",
-        "image": "https://i.imgur.com/QkIa5tT.jpeg",
-        "creationAt": "2024-01-16T00:07:03.000Z",
-        "updatedAt": "2024-01-16T00:07:03.000Z"
-      }
-    },
-    {
-      "id": 54,
-      "title": "new book",
-      "price": 10,
-      "description": "new book",
-      "images": [
-        "[\"https://api.escuelajs.co/api/v1/files/2b13.jpeg\"]"
-      ],
-      "creationAt": "2024-01-16T01:47:36.000Z",
-      "updatedAt": "2024-01-16T01:47:36.000Z",
-      "category": {
-        "id": 1,
-        "name": "Clothes",
-        "image": "https://i.imgur.com/QkIa5tT.jpeg",
-        "creationAt": "2024-01-16T00:07:03.000Z",
-        "updatedAt": "2024-01-16T00:07:03.000Z"
-      }
-    },
+    
     {
       "id": 55,
       "title": "test book ",
@@ -1105,60 +1034,7 @@
         "updatedAt": "2024-01-16T00:07:04.000Z"
       }
     },
-    {
-      "id": 57,
-      "title": "New Product Course",
-      "price": 9999,
-      "description": "A description",
-      "images": [
-        "[\"https://placeimg.com/640/480/any\"]"
-      ],
-      "creationAt": "2024-01-16T04:34:34.000Z",
-      "updatedAt": "2024-01-16T04:34:34.000Z",
-      "category": {
-        "id": 1,
-        "name": "Clothes",
-        "image": "https://i.imgur.com/QkIa5tT.jpeg",
-        "creationAt": "2024-01-16T00:07:03.000Z",
-        "updatedAt": "2024-01-16T00:07:03.000Z"
-      }
-    },
-    {
-      "id": 58,
-      "title": "New Product Course",
-      "price": 9999,
-      "description": "A description",
-      "images": [
-        "[\"https://placeimg.com/640/480/any\"]"
-      ],
-      "creationAt": "2024-01-16T04:38:51.000Z",
-      "updatedAt": "2024-01-16T04:38:51.000Z",
-      "category": {
-        "id": 1,
-        "name": "Clothes",
-        "image": "https://i.imgur.com/QkIa5tT.jpeg",
-        "creationAt": "2024-01-16T00:07:03.000Z",
-        "updatedAt": "2024-01-16T00:07:03.000Z"
-      }
-    },
-    {
-      "id": 59,
-      "title": "212",
-      "price": 212,
-      "description": "A description",
-      "images": [
-        "[\"https://placeimg.com/640/480/any\"]"
-      ],
-      "creationAt": "2024-01-16T04:41:23.000Z",
-      "updatedAt": "2024-01-16T04:41:23.000Z",
-      "category": {
-        "id": 1,
-        "name": "Clothes",
-        "image": "https://i.imgur.com/QkIa5tT.jpeg",
-        "creationAt": "2024-01-16T00:07:03.000Z",
-        "updatedAt": "2024-01-16T00:07:03.000Z"
-      }
-    },
+    
     {
       "id": 60,
       "title": "test book123455555 ",
@@ -1175,26 +1051,6 @@
         "image": "img.jpg",
         "creationAt": "2024-01-16T00:07:04.000Z",
         "updatedAt": "2024-01-16T00:07:04.000Z"
-      }
-    },
-    {
-      "id": 61,
-      "title": "this is test title ",
-      "price": 555,
-      "description": "this is test description",
-      "images": [
-        "[\"https://i.imgur.com/cHddUCu.jpeg",
-        "https://i.imgur.com/CFOjAgK.jpeg",
-        "https://i.imgur.com/wbIMMme.jpeg\"]"
-      ],
-      "creationAt": "2024-01-16T04:56:26.000Z",
-      "updatedAt": "2024-01-16T04:56:26.000Z",
-      "category": {
-        "id": 1,
-        "name": "Clothes",
-        "image": "https://i.imgur.com/QkIa5tT.jpeg",
-        "creationAt": "2024-01-16T00:07:03.000Z",
-        "updatedAt": "2024-01-16T00:07:03.000Z"
       }
     }
   ]

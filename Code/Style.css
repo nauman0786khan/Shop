@@ -268,9 +268,18 @@ div#addcart {
     POSITION: ABSOLUTE;
     RIGHT: 0;
     TOP: 53PX;
+    transition: 2s;
 }
 .pluscart{
     padding:10px;
     background-color:#fff;
     box-shadow: 0px 1px 11px #000;
 } 
+
+#dro #addcart{
+    opacity: 0;
+}
+.droactive #addcart{ 
+    opacity: 1 !important;
+
+}

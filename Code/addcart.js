@@ -35,7 +35,7 @@ cartarr.forEach((item)=>{
     
     </div>`
     localStorage.setItem("carts" , cats);    
-    document.getElementById("dro").innerHTML= cartarr.length;
+
    })
   
   
@@ -50,9 +50,12 @@ cartarr.forEach((item)=>{
 }
 let dropcart= document.getElementById("dro")
 function drodown(){
-    console.log()
-    dropcart.classList.toggle("droactive").slidedown(300);
+    console.log(dropcart)
+    dropcart.classList.toggle("droactive");
 
  }
 
  
+ let cartn = localStorage.getItem("cartsave");
+ console.log(cartn)
+ document.getElementById("numberpro").innerHTML= cartn.length;

@@ -23,7 +23,7 @@ console.log(clothes);
 let clo=""
 clothes.map((cl)=>{
     // console.log(pp);
-    clo+=`<div class="item"><img src="${cl.images}" height="250px" alt="${cl.id}" width="250px"><p >${cl.title}</p><button  id="${cl.id}" onClick="getcartid(this.id)" class="btn">Buy Now</button></div></div>
+    clo+=`<div class="item"><img src="${cl.images}" class="imc" height="250px" alt="${cl.id}" width="250px"><p >${cl.title}</p><button  id="${cl.id}" onClick="getcartid(this.id)" class="btn">Add to Cart</button></div></div>
          </div>
         
         `;
@@ -37,7 +37,7 @@ clothes.map((cl)=>{
 let Elc=""
 Electronics.map((EE)=>{
 // console.log(pp);
-     Elc+=`<div class="item"><img src="${EE.images}" alt="${EE.id}" height="250px" width="250px"><p >${EE.title}</p></div>
+     Elc+=`<div class="item"><img src="${EE.images}" class="imc" alt="${EE.id}" height="250px" width="250px"><p >${EE.title}</p><button  id="${EE.id}" onClick="getcartid(this.id)" class="btn">Add to Cart</button></div>
 
         
      </div>
@@ -49,7 +49,7 @@ Electronics.map((EE)=>{
 let Fur=""
 Furniture.map((fr)=>{
     // console.log(pp);
-    Fur+=`<div class="item"><img src="${fr.images}" height="250px" alt="${fr.id}" width="250px"><p >${fr.title}</p></div>
+    Fur+=`<div class="item"><img src="${fr.images}" height="250px" alt="${fr.id}" width="250px"><p >${fr.title}</p><button  id="${fr.id}" onClick="getcartid(this.id)" class="btn">Add to Cart</button></div>
          </div>
         
         `;
@@ -60,7 +60,7 @@ Furniture.map((fr)=>{
 let Sho=""
 Shoes.map((Sh)=>{
     // console.log(pp);
-    Sho+=`<div class="item"><img src="${Sh.images}" height="250px" alt="${Sh.id}" width="250px"><p >${Sh.title}</p></div>
+    Sho+=`<div class="item"><img src="${Sh.images}" class="imc" height="250px" alt="${Sh.id}" width="250px"><p >${Sh.title}</p><button  id="${Sh.id}" onClick="getcartid(this.id)" class="btn">Add to Cart</button></div>
          </div>
         
         `;

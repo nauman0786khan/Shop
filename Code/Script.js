@@ -10,7 +10,7 @@ console.log(data);
 let dd=""
  data.map((ff)=>{
 
-     dd+=`<div class="item"><img src="${ff.image}" height="100px" width="100px"><p >${ff.name}</p></div>
+     dd+=`<div class="item"><img src="${ff.image}" height="auto" width="200px"><p >${ff.name}</p></div>
 
         
      </div>
@@ -23,9 +23,9 @@ let dd=""
 
 
 });
-let gg = document.getElementsByTagName("img");
-console.log(gg);
- document.addEventListener("click", function(gg){
+let imgalt = document.getElementById("main");
+console.log(imgalt);
+imgalt.addEventListener("click", function(gg){
    console.log(gg.target.alt);
  var  idsave= gg.target.alt;
 

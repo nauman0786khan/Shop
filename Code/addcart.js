@@ -1,4 +1,4 @@
-let x = localStorage.getItem("proid");
+
 let cartarr =[]
 let cartfinal=""
 
@@ -34,17 +34,18 @@ cartarr.forEach((item)=>{
     <div><p>${dd.title}</p></div>
     
     </div>`
-
+    localStorage.setItem("carts" , cats);    
+ 
    })
   
   
-   
+   let crt = localStorage.getItem("carts");
+   document.getElementById("cartget").innerHTML= crt;
 
 })
-localStorage.setItem("carts" , cats);    
-let crt = localStorage.getItem("carts");
-document.getElementById("cartget").innerHTML= crt;
+
+
     })
 
 }
-let caarr = localStorage.getItem("cartsave");
+

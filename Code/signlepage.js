@@ -1,5 +1,5 @@
 // single product page data fetch
-let x = localStorage.getItem("proid");
+ x = localStorage.getItem("proid");
 console.log(x); 
 
 let sp = fetch("Code/product.json");

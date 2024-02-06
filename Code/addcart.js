@@ -39,7 +39,7 @@ cartarr.forEach((item)=>{
    })
    localStorage.setItem("cartn" , cartarr);
 
-   
+   document.getElementById("numberpro").innerHTML= cartarr.length;
    
   
 
@@ -69,7 +69,7 @@ let cartn = localStorage.getItem("cartn");
    console.log(crtn)
   let ctn1 = JSON.parse(crtn);
 console.log(ctn1)
-    document.getElementById("numberpro").innerHTML= ctn1.length;
+    
 
    
  

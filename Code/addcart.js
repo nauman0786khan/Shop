@@ -35,13 +35,12 @@ cartarr.forEach((item)=>{
     
     </div>`
     localStorage.setItem("carts" , cats);    
-
+  
    })
    localStorage.setItem("cartn" , [cartarr]);
-   document.getElementById("numberpro").innerHTML= cartarr.length;
+
+   
   
-   let crt = localStorage.getItem("carts");
-   document.getElementById("cartget").innerHTML= crt;
 
 })
 
@@ -49,17 +48,28 @@ cartarr.forEach((item)=>{
     })
     
 }
+let cartn = localStorage.getItem("cartn");
 
+    console.log(cartn);
+     
+   
+  async function drodown(){
+    const dropcart= document.getElementById("dro")
+      console.log(dropcart)
+      dropcart.classList.toggle("droactive");
+      let crt = localStorage.getItem("carts");
+      document.getElementById("cartget").innerHTML= crt;
+     
 
-let dropcart= document.getElementById("dro")
-function drodown(){
-    console.log(dropcart)
-    dropcart.classList.toggle("droactive");
-
- }
-
-
- let cartn = localStorage.getItem("cartn");
-
-    console.log(cartn)
     
+   }
+
+   let crtn = localStorage.getItem("cartn");
+   document.getElementById("numberpro").innerHTML= ctn.length;
+
+
+ 
+
+
+  
+ 

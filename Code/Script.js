@@ -1,4 +1,3 @@
-
 let p = fetch("Code/cat.json"); 
  p.then( (value)=>{
 
@@ -8,6 +7,7 @@ return value.json();
 
 console.log(data);
 let dd=""
+
  data.map((ff)=>{
 
      dd+=`<div class="item"><img src="${ff.image}" height="auto" width="200px"><p >${ff.name}</p></div>
@@ -18,8 +18,9 @@ let dd=""
     `;
 
 });
- 
 
+document.getElementById("rootcat").innerHTML=dd;
+ 
 
 
 });
@@ -43,5 +44,3 @@ imgalt.addEventListener("click", function(gg){
 
 
   });
-  
-  

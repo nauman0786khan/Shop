@@ -257,7 +257,7 @@ div#addcart {
 POSITION: ABSOLUTE;
 RIGHT: 0;
 TOP: 53PX;
-transition: 2s;
+transition: 0.5s;
 }
 .pluscart {
 padding: 10px;
@@ -301,3 +301,13 @@ img {
 }
 
 
+#main p{
+
+    font-weight: 400;
+    font-size: 94%;
+    line-height: 1.8;
+    text-overflow: ellipsis !important;
+    overflow: hidden;
+    text-wrap: nowrap;
+    width: 80%;
+}

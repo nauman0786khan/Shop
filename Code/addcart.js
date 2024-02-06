@@ -37,8 +37,9 @@ cartarr.forEach((item)=>{
     localStorage.setItem("carts" , cats);    
   
    })
-   localStorage.setItem("cartn" , [cartarr]);
+   localStorage.setItem("cartn" , cartarr);
 
+   
    
   
 
@@ -59,17 +60,24 @@ let cartn = localStorage.getItem("cartn");
       dropcart.classList.toggle("droactive");
       let crt = localStorage.getItem("carts");
       document.getElementById("cartget").innerHTML= crt;
-     
 
     
    }
 
+
    let crtn = localStorage.getItem("cartn");
-   document.getElementById("numberpro").innerHTML= ctn.length;
+   console.log(crtn)
+  let ctn1 = JSON.parse(crtn);
+console.log(ctn1)
+    document.getElementById("numberpro").innerHTML= ctn1.length;
 
-
+   
  
 
 
+ 
+   
   
+
+
  

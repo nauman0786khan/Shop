@@ -213,9 +213,12 @@ padding-bottom: 15px;
 display: none;
 }
 
-.footer {
+.footer  {
 padding: 50px;
-background-color: #212121;
+background-color: #fff;
+align-items: center;
+justify-content: center !important;
+
 }
 .footer p ,footer h4{
 color: #fff !important;
@@ -384,7 +387,7 @@ ul.listoffer li{
 }
 input.scan::placeholder {
     color: #333;
-    font-size:13px;
+    font-size:11px;
     text-align: left;
     font-family: 'Cinzel';
     line-height: 1;

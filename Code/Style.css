@@ -11,9 +11,12 @@
     overflow: overlay;
     overflow-x: scroll;
     }
-body {
-    box-sizing: border-box;
-  
+html , body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden !important; 
 }
 
 .owl-carousel .owl-stage-outer{
@@ -27,10 +30,6 @@ color: #020611 !important;
 }
 body{
 background-color: var(--secondary);
-
-}
-p{
-font-weight: 600;
 
 }
 
@@ -137,18 +136,7 @@ border: none;
 background-color: var(--secondary);
 
 }
-input.scan::placeholder {
-color: #333;
-font-size:20px;
-text-align: left;
-font-family: 'Cinzel';
-line-height: 1;
-position: relative;
-left: 20px;
 
-
-
-}
 
 
 .gap {
@@ -160,7 +148,7 @@ width: 100%;
 
 }
 .textgap{
-padding-bottom:20px;
+padding-bottom:10px;
 
 
 }
@@ -214,12 +202,7 @@ z-index:1;
 .log{
 border-radius: 20px 0px 0px 20px !important;
 }
-p{
 
-font-weight: 400;
-font-size: 94%;
-line-height: 1.8;
-}
 
 .item {
 padding-top: 15px;
@@ -273,7 +256,7 @@ opacity: 0;
 }
 .droactive #addcart{ 
 opacity: 1 !important;
-
+z-index: 2;
 }
 
 
@@ -292,22 +275,149 @@ width: 350px;
 display: flex;
 align-items: center;
 }
+/* deckstop media  */
+@media screen and (min-width:786px){
+
+    #main p{
+
+        font-weight: 400;
+        font-size: 94%;
+        line-height: 1.8;
+        text-overflow: ellipsis !important;
+        overflow: hidden;
+        text-wrap: nowrap;
+        width: 75%;
+        margin-top:10px;
+    }
+    input.scan::placeholder {
+        color: #333;
+        font-size:20px;
+        text-align: left;
+        font-family: 'Cinzel';
+        line-height: 1;
+        position: relative;
+        left: 20px;
+        
+        
+        
+        }
+
+}
+/* mobile media  */
 
 @media screen and (max-width:786px) {
-img {
+#main img, .cat img{
     width: 100px !important;
     height: auto;
 }
+#main p{
+font-size:10px !important;
+text-overflow: ellipsis !important;
+        overflow: hidden;
+        text-wrap: nowrap;
+        width: 100%;
+        margin-top:10px;
+
+}
+.btn {
+    width: 70px !important;
+    height: 25px !important;
+    border-radius: 30px;
+    background: #3f69ef;
+    color: #fff;
+    font-size: 8px;
+    box-shadow: 0px 3px 3px #00000082;
+    border: none;
+    margin-top: 10px;
+} 
+#main .item{
+
+   width: 90px; 
+}
+.head{
+    flex-direction: column;
+
+}
+.search{
+    padding: 0px;
+    width: 100% !important;
+
+}
+.cat img{
+width: 60px !important;
+
+}
+.cat .item{
+    width: 16%;
+
+}
+.cat p{
+font-size: 10px;
+
+}
+.sgproduct .flex{
+flex-direction: column;
+
+}
+.sgproduct h2  {
+font-size:22px !important;
+
+}
+.sgproduct h4{
+
+    font-size:14px !important
+}
+.sgproduct li{
+font-size: 10px;
+
+}
+.sgproduct p {
+    font-size: 10px;
+
+}
+ul.listoffer li{
+
+    margin-left: 20px; 
+}
+.login{
+    padding-left: 0px;
+}
+input.scan::placeholder {
+    color: #333;
+    font-size:13px;
+    text-align: left;
+    font-family: 'Cinzel';
+    line-height: 1;
+    position: relative;
+    left: 20px;
+    
+    
+    }
+    .log{
+        flex-direction: column;
+        border-radius:20px !important ;
+        width: 90%;
+    }
+    .wth.rightlogo {
+        display: none;
+    }
 }
 
 
-#main p{
 
-    font-weight: 400;
-    font-size: 94%;
-    line-height: 1.8;
-    text-overflow: ellipsis !important;
-    overflow: hidden;
-    text-wrap: nowrap;
-    width: 80%;
+section.slider{
+overflow: hidden;
+
+}
+.slider .item{
+padding: 0px !important;
+
+}
+.logcart{
+display: flex;
+    gap:15px;
+}
+.logosearch{
+width:100%;
+
 }

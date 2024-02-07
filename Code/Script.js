@@ -25,7 +25,7 @@ document.getElementById("rootcat").innerHTML=dd;
 
 });
 
-let imgalt = document.getElementById("main");
+let imgalt=document.getElementById("main");
 console.log(imgalt);
 imgalt.addEventListener("click", function(gg){
    console.log(gg.target.alt);

@@ -1,6 +1,7 @@
 
 
 
+// fatch product
 
 let v = fetch("Code/product.json");
 v.then((vv)=>{
@@ -88,4 +89,25 @@ document.getElementById("header").innerHTML=value;
 });
 
 
- 
+$(document).ready(function(){
+   
+    $(".scan").on("keyup", function() {
+
+      
+      $("#mains").addClass("active");
+      var ff1 = $(this).val().toLowerCase();
+if(ff1 == ""){
+
+  $("#mains").removeClass("active");
+
+}
+else if(ff1 != null){
+  $("#mains .filter , #main .itme").filter(function() {
+    $(this).toggle($(this).text().toLowerCase().indexOf(ff1) > -1)
+  });
+
+}
+
+      
+    });
+  });

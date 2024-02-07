@@ -44,30 +44,7 @@ imgalt.addEventListener("click", function(gg){
 
 
   });
-// $(".scan").on("click" , function(){
 
-//   $("#mains").toggle(300);
-// });
 
-  $(document).ready(function(){
-   
-    $(".scan").on("keyup", function() {
-      $("#mains").addClass("active");
-      var ff1 = $(this).val().toLowerCase();
-if(ff1 == null){
-
-  $("#mains").removClass("active");
-
-}
-else if(ff1 != null){
-  $("#mains .item").filter(function() {
-    $(this).toggle($(this).text().toLowerCase().indexOf(ff1) > -1)
-  });
-
-}
-
-      
-    });
-  });
 
   

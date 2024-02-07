@@ -29,17 +29,17 @@ let imgalt=document.getElementById("main");
 console.log(imgalt);
 imgalt.addEventListener("click", function(gg){
    console.log(gg.target.alt);
- var  idsave= gg.target.alt;
+var  idsave= gg.target.alt;
 
- if(idsave <= 0){
+if(idsave <= 0){
 
   console.log('no id recived');
-  }else if (idsave > 0){
+}else if (idsave > 0){
     window.open("singleproductpage.html");
   
   }
   
-   localStorage.setItem("proid" , idsave);
+  localStorage.setItem("proid" , idsave);
 
    
 

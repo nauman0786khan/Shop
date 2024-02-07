@@ -75,7 +75,7 @@ document.getElementById("Furniture").innerHTML = Fur;
 document.getElementById("Shoes").innerHTML = Sho;
 $(document).ready(function(){
    
-  $(".scan").on("keyup", function() {
+$(".scan").on("keyup", function() {
     $("#mains").addClass("active");
     document.getElementById("Electronics").innerHTML = Elc;
     document.getElementById("Clothes").innerHTML = clo;

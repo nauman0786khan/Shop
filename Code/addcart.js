@@ -60,8 +60,6 @@ let cartn = localStorage.getItem("cartn");
       dropcart.classList.toggle("droactive");
       let crt = localStorage.getItem("carts");
       document.getElementById("cartget").innerHTML= crt;
-
-    
    }
 
 
@@ -88,9 +86,7 @@ else if(ff1 != null){
     $(this).toggle($(this).text().toLowerCase().indexOf(ff1) > -1)
   });
 
-}
-
-      
+}    
     });
   });
  

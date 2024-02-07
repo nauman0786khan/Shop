@@ -226,7 +226,7 @@ color: #fff !important;
 }
 ul.listoffer li::before {
 content: "";
-background-image: url(/images/c22c9fc4-0555-4460-8401-bf5c28d7ba29.webp);
+background: url("/images/c22c9fc4-0555-4460-8401-bf5c28d7ba29.webp");
 height: 15px;
 width: 15px;
 position: absolute;

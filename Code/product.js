@@ -73,7 +73,31 @@ document.getElementById("Electronics").innerHTML = Elc;
 document.getElementById("Clothes").innerHTML = clo;
 document.getElementById("Furniture").innerHTML = Fur;
 document.getElementById("Shoes").innerHTML = Sho;
+$(document).ready(function(){
+   
+  $(".scan").on("keyup", function() {
+    document.getElementById("Electronics").innerHTML = Elc;
+    document.getElementById("Clothes").innerHTML = clo;
+    document.getElementById("Furniture").innerHTML = Fur;
+    document.getElementById("Shoes").innerHTML = Sho;
+    
+    $("#mains").addClass("active");
+    var ff1 = $(this).val().toLowerCase();
+if(ff1 == ""){
 
+$("#mains").removeClass("active");
+
+}
+else if(ff1 != null){
+$("#mains .filter , #mains .item").filter(function() {
+  $(this).toggle($(this).text().toLowerCase().indexOf(ff1) > -1)
+});
+
+}
+
+    
+  });
+});
 });
 // header data fetch
 let  hh = fetch("header.html")
@@ -89,25 +113,3 @@ document.getElementById("header").innerHTML=value;
 });
 
 
-$(document).ready(function(){
-   
-    $(".scan").on("keyup", function() {
-
-      
-      $("#mains").addClass("active");
-      var ff1 = $(this).val().toLowerCase();
-if(ff1 == ""){
-
-  $("#mains").removeClass("active");
-
-}
-else if(ff1 != null){
-  $("#mains .filter , #main .itme").filter(function() {
-    $(this).toggle($(this).text().toLowerCase().indexOf(ff1) > -1)
-  });
-
-}
-
-      
-    });
-  });
